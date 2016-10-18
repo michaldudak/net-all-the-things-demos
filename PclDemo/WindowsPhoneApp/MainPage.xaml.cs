@@ -2,15 +2,18 @@
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Navigation;
 using Library;
 
-namespace WindowsApp
+namespace WindowsPhoneApp
 {
     public sealed partial class MainPage : Page
     {
         public MainPage()
         {
             this.InitializeComponent();
+
+            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         private async void TheButton_OnClick(object sender, RoutedEventArgs e)
